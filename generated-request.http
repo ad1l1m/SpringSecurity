@@ -1,0 +1,130 @@
+###
+GET http://localhost:8080/
+
+###
+GET http://localhost:8080/
+
+<> 2023-03-02T015931.404.json
+
+###
+
+###
+GET http://localhost:8081/h
+
+###
+GET http://localhost:8081/
+
+###
+GET http://localhost:8081/
+
+###
+GET http://localhost:8080/greeting
+
+###
+GET http://localhost:8081/
+
+###
+GET http://localhost:8081/
+
+###
+GET http://localhost:8080/users
+
+###
+GET http://localhost:8082/api/customer
+
+###
+GET http://localhost:8082/api/customer
+
+###
+GET http://localhost:8082/api/customer
+
+###
+GET http://localhost:8082/api/ content
+
+###
+GET http://localhost:8082/api/customer/{{id}}
+
+###
+GET /api/customer
+
+###
+POST http://localhost:8082/api/customer
+
+###
+GET http://localhost:8082/api/customer
+
+###
+GET /api/v1/auth
+
+###
+GET http://localhost:8080/api/v1/auth/login
+###
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "adil.alimbaev.04@gmail.com",
+  "password": "1234"
+}
+
+###
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "login": "adil",
+  "email": "adil.alimbaev.06@gmail.com",
+  "password": "12346"
+}
+###
+POST http://localhost:8080/api/v1/auth/check
+Content-Type: application/json
+
+{
+  "code": "4807"
+}
+
+<> 2023-04-13T000933.200.txt
+<> 2023-04-13T000859.200.txt
+<> 2023-04-12T233500.200.txt
+<> 2023-04-12T232639.200.txt
+<> 2023-04-12T232624.200.txt
+<> 2023-04-12T232307.200.txt
+<> 2023-04-12T231743.200.txt
+<> 2023-04-12T223635.200.txt
+<> 2023-04-12T211359.200.txt
+<> 2023-04-12T211326.200.txt
+<> 2023-04-12T210306.200.txt
+<> 2023-04-12T210238.200.txt
+<> 2023-04-12T205824.200.txt
+<> 2023-04-12T205814.200.txt
+<> 2023-04-12T205617.200.txt
+<> 2023-04-12T021019.200.json
+<> 2023-04-12T020817.200.json
+<> 2023-04-12T020541.200.json
+
+###
+GET http://localhost:8080/api/v1/auth/demo-controller1
+Content-Type: application/json
+
+{
+  "firstname": "adil",
+  "lastname": "adil",
+  "email": "adil.alimbaev.06@gmail.com",
+  "password": "1234"
+}
+
+
+###
+POST http://localhost:8080/b/register
+Content-Type: application/json
+
+{
+  "request": 1234
+}
+
+###
+GET http://localhost:8080/api/v1/auth/account/exist
+
+###
+GET /api/v1/auth

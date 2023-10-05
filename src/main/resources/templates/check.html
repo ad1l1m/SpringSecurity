@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Number</title>
+    <script>
+        function verifyNumber() {
+            var number = document.getElementById('number').value;
+
+            var request = {
+                code: number
+            };
+
+            fetch('/api/v1/auth/check', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=UTF-8'
+                },
+                body: JSON.stringify(request)
+            })
+                .then(function(response) {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Verification failed. Please try again.');
+                    }
+                })
+                .then(function(data) {
+                    if (data === 'ok') {
+                        alert('Verification successful!');
+                    } else {
+                        alert('Verification failed. Please try again.');
+                    }
+                })
+                .catch(function(error) {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+</head>
+<body>
+<h1>Number Verification</h1>
+<label for="number">Enter Number:</label>
+<input type="text" id="number" name="number" required><br>
+<button type="button" onclick="verifyNumber()">Verify</button>
+</body>
+</html>
