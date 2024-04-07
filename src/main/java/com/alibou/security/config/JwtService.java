@@ -58,7 +58,7 @@ return (username.equals(userDetails.getUsername())&&!isTokenExpired(token));
         return Jwts.parserBuilder().
                 setSigningKey(getSignInKey())
                 .build()
-                .parseClaimsJwt(token)
+                .parseClaimsJws(token)
                 .getBody();
     }
 

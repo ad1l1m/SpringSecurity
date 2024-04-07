@@ -51,7 +51,8 @@ GET /api/customer
 POST http://localhost:8082/api/customer
 
 ###
-GET http://localhost:8082/api/customer
+GET http://localhost:8080/api/v1/demo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZGlsLmFsaW1iYWV2LjA2QGdtYWlsLmNvbSIsImlhdCI6MTcxMjQ4ODUzMCwiZXhwIjoxNzEyNDg5OTcwfQ.MFuDaEEsl3kzzwwL6yKpXwO8BYX7UDrita7l9hkDHkQ
 
 ###
 GET /api/v1/auth
@@ -64,7 +65,7 @@ Content-Type: application/json
 
 {
   "email": "adil.alimbaev.04@gmail.com",
-  "password": "1234"
+  "password": "12346"
 }
 
 ###
@@ -72,8 +73,8 @@ POST http://localhost:8080/api/v1/auth/register
 Content-Type: application/json
 
 {
-  "login": "adil",
-  "email": "adil.alimbaev.06@gmail.com",
+  "login": "adil1",
+  "email": "adil.alimbaev.04@gmail.com",
   "password": "12346"
 }
 ###
@@ -81,7 +82,7 @@ POST http://localhost:8080/api/v1/auth/check
 Content-Type: application/json
 
 {
-  "code": "4807"
+  "code": "4237"
 }
 
 <> 2023-04-13T000933.200.txt
