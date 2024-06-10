@@ -1,4 +1,4 @@
-package adil.spring.security.user;
+package adil.spring.security.config;
 
 public enum Role {
     USER,

@@ -1,12 +1,12 @@
 
 GET http://localhost:8080/api/demo
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZGlsLmFsaW1iYWV2LjA2QGdtYWlsLmNvbSIsImlhdCI6MTcxODAwODYwMiwiZXhwIjoxNzE4MDEwMDQyfQ.udQCtCeS-HjfOymXPmqedoDburDZhsl1d94SjyszQmM
 ###
 POST http://localhost:8080/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "adil.alimbaev.04@gmail.com",
+  "email": "adil.alimbaev.06@gmail.com",
   "password": "12346"
 }
 
@@ -15,8 +15,8 @@ POST http://localhost:8080/api/auth/register
 Content-Type: application/json
 
 {
-  "login": "adil1",
-  "email": "adil.alimbaev.04@gmail.com",
+  "login": "adil2",
+  "email": "adil.alimbaev.06@gmail.com",
   "password": "12346"
 }
 ###
@@ -24,5 +24,5 @@ POST http://localhost:8080/api/auth/check
 Content-Type: application/json
 
 {
-  "code": "2283"
+  "code": "9436"
 }

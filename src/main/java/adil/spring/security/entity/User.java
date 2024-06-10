@@ -1,5 +1,6 @@
-package adil.spring.security.user;
+package adil.spring.security.entity;
 
+import adil.spring.security.config.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

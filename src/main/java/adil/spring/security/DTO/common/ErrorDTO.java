@@ -1,4 +1,4 @@
-package adil.spring.security.check;
+package adil.spring.security.DTO.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,9 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Code {
-    private String code;
+@Builder
+public class ErrorDTO {
+    private int code;
+    private String message;
 }
