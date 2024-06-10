@@ -1,4 +1,4 @@
-package adil.spring.security;
+package adil.spring.security.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReminderUser {
-    private String nameTask;
-    private int hour;
-    private int minute;
-    private int second;
-
+public class CodeDTO {
+    private String code;
 }

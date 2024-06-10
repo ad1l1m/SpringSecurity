@@ -1,6 +1,6 @@
 package adil.spring.security.config;
 
-import adil.spring.security.user.UserRepository;
+import adil.spring.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

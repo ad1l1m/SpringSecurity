@@ -1,4 +1,4 @@
-package adil.spring.security.check;
+package adil.spring.security.util;
 
 import java.util.Random;
 

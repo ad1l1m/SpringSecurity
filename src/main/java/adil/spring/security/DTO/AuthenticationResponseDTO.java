@@ -1,4 +1,4 @@
-package adil.spring.security.auth;
+package adil.spring.security.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthenticationRequest {
-    private String email;
-    private String password;
+public class AuthenticationResponseDTO {
+private String token;
+
 }
