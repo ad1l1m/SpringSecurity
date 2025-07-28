@@ -1,0 +1,31 @@
+name: Fortify-ScanCentral-SAST
+
+on:
+  push:
+    branches: [""]      # каждая фиксация
+  pull_request:           # + проверки в PR
+
+permissions:
+  contents: read          # checkout
+  security-events: write  # выгрузка SARIF, если понадобится
+
+jobs:
+  scancentral:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Официальный composite-action от OpenText
+      - name: Run ScanCentral SAST & upload to SSC
+        uses: fortify/github-action@v2            # v2.1.x на 28-июл-2025
+        with:
+          sast-scan: true                        # включаем SAST
+        env:                                     # обязательные переменные ↓
+          SSC_URL:            ${{ vars.SSC_URL }}
+          SSC_TOKEN:          ${{ secrets.SSC_CI_TOKEN }}   # CIToken
+          SC_SAST_TOKEN:      ${{ secrets.SC_CLIENT_TOKEN }}# client_auth_token
+          SC_CONTROLLER_URL:  ${{ secrets.SC_CTRL_URL }}    # если нужен override
+          # НЕобязательные:
+          # SSC_APPVERSION:  "MyApp:${{ github.ref_name }}"
+          # SC_CLIENT_VERSION: "24.4.1"а
