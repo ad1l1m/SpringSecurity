@@ -99,7 +99,7 @@ jobs:
           ##### Fortify Hosted / Software Security Center & ScanCentral
           ##### Remove this section if you're integrating with Fortify on Demand (see above)
           ### Required configuration
-          SSC_URL: ${{secrets.SSC_URL}}                       # Must be hardcoded or configured through GitHub variable, not secret
+          SSC_URL: ${{vars.SSC_URL}}                       # Must be hardcoded or configured through GitHub variable, not secret
           SSC_TOKEN: ${{secrets.SSC_TOKEN}}                # SSC CIToken; credentials should be configured through GitHub secrets
           SC_SAST_TOKEN: ${{secrets.SC_CLIENT_AUTH_TOKEN}} # ScanCentral SAST client_auth_token, required if SAST scan is enabled
           # DEBRICKED_TOKEN: ${{secrets.DEBRICKED_TOKEN}}    # Debricked token, required if Debricked scan is enabled
